@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Taller-1-2P</string>
+    <!-- Pantalla Registro de Personas -->
+    <string name="titulo_registro">Registro de Personas</string>
+    <string name="label_id">Id</string>
+    <string name="label_nombre">Nombre</string>
+    <string name="label_apellido">Apellido</string>
+    <string name="btn_guardar">GUARDAR</string>
+    <string name="btn_actualizar">ACTUALIZAR</string>
+    <string name="btn_buscar">BUSCAR</string>
+    <string name="btn_eliminar">ELIMINAR</string>
+    <string name="btn_listar">LISTAR</string>
+    <!-- Pantalla Listar Personas -->
+    <string name="titulo_listar">Lista de Personas</string>
+    <string name="col_id">Id</string>
+    <string name="col_nombre">Nombre</string>
+    <string name="col_apellido">Apellido</string>
+    <string name="btn_volver">VOLVER</string>
+</resources>

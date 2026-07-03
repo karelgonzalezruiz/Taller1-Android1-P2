@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/fondo"
+        android:fitsSystemWindows="true">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="28dp"
+            android:paddingEnd="28dp"
+            android:paddingTop="24dp"
+            android:paddingBottom="32dp">
+
+        <!-- Titulo -->
+        <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="32dp"
+                android:text="@string/titulo_registro"
+                android:textColor="@color/primario"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+        <!-- Campo Id -->
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:labelFor="@+id/txtId"
+                android:text="@string/label_id"
+                android:textColor="@color/texto"
+                android:textStyle="bold" />
+
+        <EditText
+                android:id="@+id/txtId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/campo_fondo"
+                android:minHeight="52dp"
+                android:paddingHorizontal="14dp"
+                android:autofillHints="username"
+                android:inputType="number" />
+
+        <!-- Campo Nombre -->
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:labelFor="@+id/txtNombre"
+                android:text="@string/label_nombre"
+                android:textColor="@color/texto"
+                android:textStyle="bold" />
+
+        <EditText
+                android:id="@+id/txtNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/campo_fondo"
+                android:minHeight="52dp"
+                android:paddingHorizontal="14dp"
+                android:autofillHints="name"
+                android:inputType="textPersonName" />
+
+        <!-- Campo Apellido -->
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:labelFor="@+id/txtApellido"
+                android:text="@string/label_apellido"
+                android:textColor="@color/texto"
+                android:textStyle="bold" />
+
+        <EditText
+                android:id="@+id/txtApellido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/campo_fondo"
+                android:minHeight="52dp"
+                android:paddingHorizontal="14dp"
+                android:autofillHints="name"
+                android:inputType="textPersonName" />
+
+        <!-- Fila 1: Guardar / Actualizar -->
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:orientation="horizontal">
+
+            <Button
+                    android:id="@+id/btnGuardar"
+                    android:layout_width="0dp"
+                    android:layout_height="52dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/boton_fondo"
+                    android:onClick="Guardar"
+                    android:text="@string/btn_guardar"
+                    android:textColor="@color/texto_claro" />
+
+            <Button
+                    android:id="@+id/btnActualizar"
+                    android:layout_width="0dp"
+                    android:layout_height="52dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/boton_fondo"
+                    android:onClick="Actualizar"
+                    android:text="@string/btn_actualizar"
+                    android:textColor="@color/texto_claro" />
+        </LinearLayout>
+
+        <!-- Fila 2: Buscar / Eliminar -->
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+            <Button
+                    android:id="@+id/btnBuscar"
+                    android:layout_width="0dp"
+                    android:layout_height="52dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/boton_fondo"
+                    android:onClick="Buscar"
+                    android:text="@string/btn_buscar"
+                    android:textColor="@color/texto_claro" />
+
+            <Button
+                    android:id="@+id/btnEliminar"
+                    android:layout_width="0dp"
+                    android:layout_height="52dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/boton_fondo"
+                    android:onClick="Eliminar"
+                    android:text="@string/btn_eliminar"
+                    android:textColor="@color/texto_claro" />
+        </LinearLayout>
+
+        <!-- Boton Listar -->
+        <Button
+                android:id="@+id/btnListar"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/boton_fondo"
+                android:onClick="Listar"
+                android:text="@string/btn_listar"
+                android:textColor="@color/texto_claro" />
+
+    </LinearLayout>
+</ScrollView>
